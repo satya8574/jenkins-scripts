@@ -1,0 +1,11 @@
+node('built-in') {
+                stage ('continous downlode')
+                 {
+           git 'https://github.com/satya8574/demo-2.git'
+                 }
+                 
+                stage ('continuous build')
+                 {
+            sh 'mvn clean package'
+                 }
+                }
